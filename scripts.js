@@ -4,7 +4,6 @@ async function getData () {
 
 function appendTh (textContent) {
     const thElem = document.createElement("th");
-    thElem.onclick = () =>  { sortAndRebuildTable(textContent); };
     thElem.className = "th"
     thElem.textContent = textContent;
     document.getElementById("thead").appendChild(thElem)
